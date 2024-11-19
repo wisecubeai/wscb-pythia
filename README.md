@@ -1,16 +1,13 @@
-<img src=https://raw.githubusercontent.com/databricks-industry-solutions/.github/main/profile/solacc_logo.png width="600px">
+## Pythia - AI Observability for Reliable Generative AI
 
-[![DBR](https://img.shields.io/badge/DBR-CHANGE_ME-red?logo=databricks&style=for-the-badge)](https://docs.databricks.com/release-notes/runtime/CHANGE_ME.html)
-[![CLOUD](https://img.shields.io/badge/CLOUD-CHANGE_ME-blue?logo=googlecloud&style=for-the-badge)](https://databricks.com/try-databricks)
-
-## Business Problem
-WHAT IS THE BUSINESS PROBLEM ADDRESSED BY THIS SOLUTION
+Pythia is an AI observability and reliability platform designed to monitor and manage the outputs of Large Language Models (LLMs) in real-time. It ensures that your generative AI applications are accurate, fair, and trustworthy by detecting issues like hallucinations, bias, explainability gaps, and security vulnerabilities by seamlessly plugging into your existing observability stack.
 
 ## Reference Architecture
-IMAGE TO REFERENCE ARCHITECTURE
+<img src=images/pythia_ai_hallucination_monitoring.png width="600px">
 
 ## Authors
-<john.doe@databricks.com>
+|Databricks Inc.|
+|WiseCube AI|
 
 ## Project support 
 
