@@ -6,6 +6,7 @@ Pythia is an AI observability and reliability platform designed to monitor and m
 <img src=images/pythia_ai_hallucination_monitoring.png width="800px">
 
 ## Authors
+|-|
 |Databricks Inc.|
 |WiseCube AI|
 
