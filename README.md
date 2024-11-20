@@ -13,7 +13,7 @@ With Pythia, compliance is no longer a hurdle but a seamless aspect of your AI o
 
 <img src=images/pyhtia_wisecube_databricks_monitoring.png width="800px">
 
-| ## Authors |
+| Authors |
 | ----------- |
 | Databricks Inc. |
 | WiseCube AI |
