@@ -13,10 +13,10 @@ With Pythia, compliance is no longer a hurdle but a seamless aspect of your AI o
 
 <img src=images/pyhtia_wisecube_databricks_monitoring.png width="800px">
 
-## Authors
-|-|
-|Databricks Inc.|
-|WiseCube AI|
+| ## Authors |
+| ----------- |
+| Databricks Inc. |
+| WiseCube AI |
 
 ## Project support 
 
@@ -30,3 +30,4 @@ Any issues discovered through the use of this project should be filed as GitHub 
 
 | library                                | description             | license    | source                                              |
 |----------------------------------------|-------------------------|------------|-----------------------------------------------------|
+| askpythia                              | Advanced hallucination detection API to ensure your AI systems are both reliable and compliant, enhancing accuracy across all your Generative AI applications | MIT License | https://pypi.org/project/askpythia/ |
