@@ -2,8 +2,16 @@
 
 Pythia is an AI observability and reliability platform designed to monitor and manage the outputs of Large Language Models (LLMs) in real-time. It ensures that your generative AI applications are accurate, fair, and trustworthy by detecting issues like hallucinations, bias, explainability gaps, and security vulnerabilities by seamlessly plugging into your existing observability stack.
 
+
 ## Reference Architecture
+
 <img src=images/pythia_ai_hallucination_monitoring.png width="800px">
+
+## Pythia in Databricks for Continuous Monitoring & Alerting
+
+With Pythia, compliance is no longer a hurdle but a seamless aspect of your AI operations. Integration with Databricks monitoring and reporting not only helps you track and document your application's AI performance but also helps adhere to the highest standards of accountability and transparency.
+
+<img src=images/pyhtia_wisecube_databricks_monitoring.png width="800px">
 
 ## Authors
 |-|
