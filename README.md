@@ -19,7 +19,7 @@ With Pythia, compliance is no longer a hurdle but a seamless aspect of your AI o
 
 2. After the data from Serving Endpoints is stored into the reference table this can be then connected to the Pythia library to run and create statistics on it and save it back to a dedicated Databricks delta table into the existing Data Warehouse by following this notebook: [Pythia Hallucination Detection notebook](01_PythiaTableFromInferenceTable.py)
 
-3. Last step is to create the monitoring dashboard and to expose statistics based on the generated output from Pythia into the dedicated Databricks Data Warehouse Delta table: [Monitoring and Alerting notebook](02_CreateTimeSeriesMonitor.py)
+3. Last step is to create the monitoring dashboard and to expose statistics based on the generated output from Pythia that will contain accuracy based on different types of detecion that was done on the input data from the inference tables into the dedicated Databricks Data Warehouse Delta table: [Monitoring and Alerting notebook](02_CreateTimeSeriesMonitor.py)
 
 | Authors |
 | ----------- |
