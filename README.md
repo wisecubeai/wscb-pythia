@@ -15,11 +15,11 @@ With Pythia, compliance is no longer a hurdle but a seamless aspect of your AI o
 
 ## Steps to build Monitoring and Alerting with Pythia in Databricks
 
-1. Fisrt step is used to create some records with context as references that will be stored into a connected Databricks inference table that is associated directly to a Serving endpoint. We are using a custon prompt format what use the question and context. In order to proceed wiht that use the following notebook: [InputData notebook]($./00_PythiaExampleInput)
+1. Fisrt step is used to create some records with context as references that will be stored into a connected Databricks inference table that is associated directly to a Serving endpoint. We are using a custon prompt format what use the question and context. In order to proceed wiht that use the following notebook: [InputData notebook](00_PythiaExampleInput.py)
 
-2. After the data from Serving Endpoints is stored into the reference table this can be then connected to the Pythia library to run and create statistics on it and save it back to a dedicated Databricks delta table into the existing Data Warehouse by following this notebook: [Pythia Hallucination Detection notebook]($./01_PythiaTableFromInferenceTable)
+2. After the data from Serving Endpoints is stored into the reference table this can be then connected to the Pythia library to run and create statistics on it and save it back to a dedicated Databricks delta table into the existing Data Warehouse by following this notebook: [Pythia Hallucination Detection notebook](01_PythiaTableFromInferenceTable.py)
 
-3. Last step is to create the monitoring dashboard and to expose statistics based on the generated output from Pythia into the dedicated Databricks Data Warehouse Delta table: [Monitoring and Alerting notebook]($./02_CreateTimeSeriesMonitor)
+3. Last step is to create the monitoring dashboard and to expose statistics based on the generated output from Pythia into the dedicated Databricks Data Warehouse Delta table: [Monitoring and Alerting notebook](02_CreateTimeSeriesMonitor.py)
 
 | Authors |
 | ----------- |
