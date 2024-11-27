@@ -1,4 +1,4 @@
-<img width="1510" alt="inference_sample" src="https://github.com/user-attachments/assets/3afcd679-9f52-4b92-b6cb-dd00e153c2be">## Pythia - AI Observability for Reliable Generative AI
+## Pythia - AI Observability for Reliable Generative AI
 
 Pythia is an AI observability and reliability platform designed to monitor and manage the outputs of Large Language Models (LLMs) in real-time. It ensures that your generative AI applications are accurate, fair, and trustworthy by detecting issues like hallucinations, bias, explainability gaps, and security vulnerabilities by seamlessly plugging into your existing observability stack.
 
@@ -17,10 +17,11 @@ With Pythia, compliance is no longer a hurdle but a seamless aspect of your AI o
 
 1. Fisrt step is used to create some records with context as references that will be stored into a connected Databricks inference table that is associated directly to a Serving endpoint. We are using a custon prompt format what use the question and context. In order to proceed wiht that use the following notebook: [InputData notebook](00_PythiaExampleInput.py). Inference serving endpoint configration template and also inference table that is associated are as per bellow screenshots:
 
-# Inference Serving Endpoint   
-   <img src=images/inference_sample.png width="600px">
-#Inference table details
-   <img src=images/inference_serving_endpoint.png width="600px">
+### Inference Serving Endpoint
+   <img src=images/inference_serving_endpoint.png width="800px">
+   
+#### Inference table details
+   <img src=images/inference_sample.png width="800px">
 
 2. After the data from Serving Endpoints is stored into the reference table this can be then connected to the Pythia library to run and create statistics on it and save it back to a dedicated Databricks delta table into the existing Data Warehouse by following this notebook: [Pythia Hallucination Detection notebook](01_PythiaTableFromInferenceTable.py). There is also an important configiration related to the refresh interval and can be easy configured to run on different intervals. When all is configured correctly it will expose this type of statistics as presented in the table bellow:
 
