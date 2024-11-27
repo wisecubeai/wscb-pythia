@@ -20,7 +20,10 @@ With Pythia, compliance is no longer a hurdle but a seamless aspect of your AI o
 ### Inference Serving Endpoint
    <img src=images/inference_serving_endpoint.png width="800px">
    
-#### Inference table details
+#### Inference table schema 
+   <img src=images/inference_schema_details.png width="800px">
+
+#### Inference table sample entries 
    <img src=images/inference_sample.png width="800px">
 
 2. After the data from Serving Endpoints is stored into the reference table this can be then connected to the Pythia library to run and create statistics on it and save it back to a dedicated Databricks delta table into the existing Data Warehouse by following this notebook: [Pythia Hallucination Detection notebook](01_PythiaTableFromInferenceTable.py). There is also an important configiration related to the refresh interval and can be easy configured to run on different intervals. When all is configured correctly it will expose this type of statistics as presented in the table bellow:
