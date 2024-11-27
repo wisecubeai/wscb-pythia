@@ -17,7 +17,7 @@ With Pythia, compliance is no longer a hurdle but a seamless aspect of your AI o
 
 1. Fisrt step is used to create some records with context as references that will be stored into a connected Databricks inference table that is associated directly to a Serving endpoint. We are using a custon prompt format what use the question and context. In order to proceed wiht that use the following notebook: [InputData notebook](00_PythiaExampleInput.py). Inference serving endpoint configration template and also inference table that is associated are as per bellow screenshots:
 
-### Inference Serving Endpoint
+#### Inference Serving Endpoint
    <img src=images/inference_serving_endpoint.png width="800px">
    
 #### Inference table schema 
