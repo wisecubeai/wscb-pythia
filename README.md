@@ -15,7 +15,7 @@ With Pythia, compliance is no longer a hurdle but a seamless aspect of your AI o
 
 ## Steps to build Monitoring and Alerting with Pythia in Databricks
 
-1. Fisrt step is used to create some records with context as references that will be stored into a connected Databricks inference table that is associated directly to a Serving endpoint. We are using a custon prompt format what use the question and context. In order to proceed wiht that use the following notebook: [InputData notebook](00_PythiaExampleInput.py). Inference serving endpoint configration template and also inference table that is associated are as per bellow screenshots:
+1. Fisrt step is used to create some records with context as references that will be stored into a connected Databricks inference table that is associated directly to a Serving endpoint. We are using a custon prompt format what use the question and context. In order to proceed wiht that use the following notebook: [InputData notebook](00_PythiaExampleInput.py). Inference serving endpoint configuration template and also inference table that is associated are as per bellow screenshots:
 
 #### Inference Serving Endpoint
    <img src=images/inference_serving_endpoint.png width="800px">
@@ -28,7 +28,12 @@ With Pythia, compliance is no longer a hurdle but a seamless aspect of your AI o
 
 2. After the data from Serving Endpoints is stored into the reference table this can be then connected to the Pythia library to run and create statistics on it and save it back to a dedicated Databricks delta table into the existing Data Warehouse by following this notebook: [Pythia Hallucination Detection notebook](01_PythiaTableFromInferenceTable.py). There is also an important configiration related to the refresh interval and can be easy configured to run on different intervals. When all is configured correctly it will expose this type of statistics as presented in the table bellow:
 
+#### Location of Access token for the serving endpoint
+   <img src=images/access_token.png width="800px">
+   
+#### Table schema for pyhtia hallucination details including validators
   <img src=images/pythia_results.png width="800px">
+  
 
 3. Last step is to create the monitoring dashboard and to expose statistics based on the generated output from Pythia that will contain accuracy based on different types of detecion that was done on the input data from the inference tables into the dedicated Databricks Data Warehouse Delta table: [Monitoring and Alerting notebook](02_CreateTimeSeriesMonitor.py)
 
@@ -51,4 +56,4 @@ Any issues discovered through the use of this project should be filed as GitHub 
 
 | library                                | description             | license    | source                                              |
 |----------------------------------------|-------------------------|------------|-----------------------------------------------------|
-| askpythia                              | Advanced hallucination detection API to ensure your AI systems are both reliable and compliant, enhancing accuracy across all your Generative AI applications | MIT License | https://pypi.org/project/askpythia/ |
+| askpythia                              | Advanced hallucination detection library to ensure your AI systems are both reliable and compliant, enhancing accuracy across all your Generative AI applications | MIT License | https://pypi.org/project/askpythia/ |
