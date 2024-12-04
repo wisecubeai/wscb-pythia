@@ -33,7 +33,17 @@ With Pythia, compliance is no longer a hurdle but a seamless aspect of your AI o
    
 #### Table schema for pyhtia hallucination details including validators
   <img src=images/pythia_results.png width="800px">
-  
+
+| Validator name                         | description             | input      | output                                              |
+|----------------------------------------|-------------------------|------------|-----------------------------------------------------|
+| detect_pii                             | This scanner acts as your digital guardian, ensuring your user prompts remain confidential and free from sensitive data exposure. | input_reference | input_response |
+| detect_prompt_injection                             | Guard against crafty input manipulations targeting LLM,by identifying and mitigating such attempts, it ensures the LLM operates securely without succumbing to injection attacks. | input_reference |  |
+| detect_ban_substrings                             | Ensure that specific undesired substrings never make it into your prompts with the BanSubstrings scanner. |  | input_response |
+| detect_gibberish                             | This scanner is designed to identify and filter out gibberish or nonsensical inputs in English language text. |  | input_response |
+| detect_toxicity                             | This provides a mechanism to analyze and mitigate the toxicity of text content, this tool is instrumental in preventing the dissemination of harmful or offensive content. |  | input_response |
+| detect_relevance                             | This scanner ensures that output remains relevant and aligned with the given input prompt. |  | input_response |
+| detect_factual_consistency                             | This scanner is designed to assess if the given content contradicts or refutes a certain statement or prompt. It acts as a tool for ensuring the consistency and correctness of language model outputs, especially in contexts where logical contradictions can be problematic. |  | input_response |
+| detect_secrets                             | This scanner diligently examines user inputs, ensuring that they don't carry any secrets before they are processed by the language model. |  | input_response |
 
 3. Last step is to create the monitoring dashboard and to expose statistics based on the generated output from Pythia that will contain accuracy based on different types of detecion that was done on the input data from the inference tables into the dedicated Databricks Data Warehouse Delta table: [Monitoring and Alerting notebook](02_CreateTimeSeriesMonitor.py)
 
